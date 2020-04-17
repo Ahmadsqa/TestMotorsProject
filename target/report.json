@@ -1,0 +1,331 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-17T21:46:33.196Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6986751500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Customer can search for cars to buy lum sum cash only",
+        "description": "",
+        "id": "search-for-cars;customer-can-search-for-cars-to-buy-lum-sum-cash-only;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 182700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2529784300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i navigate to motors.co.uk homepage",
+            "match": {
+              "location": "CarBuyingSearchSteps.i_navigate_to_motors_co_uk_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 460557400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i enter post code as \"B33 8AE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"B33 8AE\"",
+                  "offset": 21
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_enter_post_code_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 288201200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i select car make as \"Bentley\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bentley\"",
+                  "offset": 21
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_select_car_make_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203168900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i select care model as \"Azure\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Azure\"",
+                  "offset": 23
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_select_care_model_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242862700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i select minimum price as \"£1,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£1,000\"",
+                  "offset": 26
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_select_minimum_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 315603600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i select maximum price as \"£100,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£100,000\"",
+                  "offset": 26
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_select_maximum_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2238290500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on search button",
+            "match": {
+              "location": "CarBuyingSearchSteps.i_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the search reusults based on above criteria are displayed",
+            "match": {
+              "location": "CarBuyingSearchSteps.the_search_reusults_based_on_above_criteria_are_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-17T21:46:46.560Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6105057700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Customer can search for cars to buy lum sum cash only",
+        "description": "",
+        "id": "search-for-cars;customer-can-search-for-cars-to-buy-lum-sum-cash-only;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 49500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2445394100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i navigate to motors.co.uk homepage",
+            "match": {
+              "location": "CarBuyingSearchSteps.i_navigate_to_motors_co_uk_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 594665600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i enter post code as \"B10 0US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"B10 0US\"",
+                  "offset": 21
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_enter_post_code_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 341205000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i select car make as \"BMW\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BMW\"",
+                  "offset": 21
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_select_car_make_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 241813100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i select care model as \"5 Series\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5 Series\"",
+                  "offset": 23
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_select_care_model_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 380166400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i select minimum price as \"£500\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£500\"",
+                  "offset": 26
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_select_minimum_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 288799400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i select maximum price as \"£5,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£5,000\"",
+                  "offset": 26
+                }
+              ],
+              "location": "CarBuyingSearchSteps.i_select_maximum_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3247868200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on search button",
+            "match": {
+              "location": "CarBuyingSearchSteps.i_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the search reusults based on above criteria are displayed",
+            "match": {
+              "location": "CarBuyingSearchSteps.the_search_reusults_based_on_above_criteria_are_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search for cars",
+    "description": "  as a customer\n  i want the ability to search for cars for sales\n  so that i can review details features about the car",
+    "id": "search-for-cars",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/co/uk/motors/features/CustomerCanSearchCarToBuy.feature",
+    "tags": []
+  }
+]

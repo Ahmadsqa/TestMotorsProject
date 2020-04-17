@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>No Name (add projectName to cucumber-reporting.properties)</td>
+      <td>17 Apr 2020, 22:47</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">CarBuyingSearchSteps.i_click_on_search_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="2743079350">2.743</td>
+              <td class="duration" data-value="2743079350">3.247</td>
+              <td class="duration" data-value="5486158700">5.486</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CarBuyingSearchSteps.i_enter_post_code_as(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="527611500">0.527</td>
+              <td class="duration" data-value="527611500">0.594</td>
+              <td class="duration" data-value="1055223000">1.055</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CarBuyingSearchSteps.i_navigate_to_motors_co_uk_homepage()</td>
+              <td>2</td>
+              <td class="duration" data-value="2487589200">2.487</td>
+              <td class="duration" data-value="2487589200">2.529</td>
+              <td class="duration" data-value="4975178400">4.975</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CarBuyingSearchSteps.i_select_car_make_as(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="314703100">0.314</td>
+              <td class="duration" data-value="314703100">0.341</td>
+              <td class="duration" data-value="629406200">0.629</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CarBuyingSearchSteps.i_select_care_model_as(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="222491000">0.222</td>
+              <td class="duration" data-value="222491000">0.241</td>
+              <td class="duration" data-value="444982000">0.444</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CarBuyingSearchSteps.i_select_maximum_price_as(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="302201500">0.302</td>
+              <td class="duration" data-value="302201500">0.315</td>
+              <td class="duration" data-value="604403000">0.604</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CarBuyingSearchSteps.i_select_minimum_price_as(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="311514550">0.311</td>
+              <td class="duration" data-value="311514550">0.380</td>
+              <td class="duration" data-value="623029100">0.623</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CarBuyingSearchSteps.the_search_reusults_based_on_above_criteria_are_displayed()</td>
+              <td>2</td>
+              <td class="duration" data-value="92050">0.000</td>
+              <td class="duration" data-value="92050">0.000</td>
+              <td class="duration" data-value="184100">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hook.setup()</td>
+              <td>2</td>
+              <td class="duration" data-value="6545904600">6.545</td>
+              <td class="duration" data-value="6545904600">6.986</td>
+              <td class="duration" data-value="13091809200">13.091</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hook.tearDown()</td>
+              <td>2</td>
+              <td class="duration" data-value="116100">0.000</td>
+              <td class="duration" data-value="116100">0.000</td>
+              <td class="duration" data-value="232200">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>10</td>
+            <td>20</td>
+            <td class="duration">1.345</td>
+            <td class="duration">13.091</td>
+            <td class="duration">26.910</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
